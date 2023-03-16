@@ -8,7 +8,7 @@ import AboutMeMain from "./components/AboutMeMain.jsx"
 import ProjectCard from "./assets/Projects.jsx"
 
 function App() {
-  const [loading, setLoading] = useState(false)
+  const [loading, setLoading] = useState(true)
   const [show, setShow] = useState(true)
   const [showModal, setShowModal] = useState(false);
 

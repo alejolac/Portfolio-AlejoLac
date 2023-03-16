@@ -19,7 +19,7 @@ export default function AboutMeMain() {
                     </p>
                 </div>
                 <div className='aboutMeMain-img'>
-                    <img src="../../imgAlejo.jpeg" alt="" />
+                    <img src="../../public/imgAlejo.jpeg" alt="" />
                 </div>
             </div>
         </>

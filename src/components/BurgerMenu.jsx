@@ -5,7 +5,7 @@ const BurgerMenu = () => {
         <section className="top-nav">
             <div className="imgMenu">
                 <a href="">
-                    <img src="../../Logo_Alejo.png" alt="" />
+                    <img src="../../public/Logo_Alejo.png" alt="" />
                 </a>
             </div>
             <input id="menu-toggle" type="checkbox" />
