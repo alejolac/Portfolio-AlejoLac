@@ -51,16 +51,16 @@ function App() {
           </nav>
           <div className='barraInfoL'>
             <div className='barraInfo-content'>
-              <a href="">
+              <a href="https://www.linkedin.com/in/alejo-lacroix-906433252/">
                 <i className="fa-brands fa-linkedin barraInfo-logos"></i>
               </a>
-              <a href="">
+              <a href="https://github.com/alejolac">
                 <i className="fa-brands fa-github barraInfo-logos"></i>
               </a>
-              <a href="">
+              <a href="https://www.instagram.com/alejobuc_/">
                 <i className="fa-brands fa-instagram barraInfo-logos"></i>
               </a>
-              <a href="">
+              <a href="https://codepen.io/alejobuc">
                 <i className="fa-brands fa-codepen barraInfo-logos"></i>
               </a>
             </div>
