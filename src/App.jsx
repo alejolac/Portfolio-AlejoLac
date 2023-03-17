@@ -11,6 +11,34 @@ function App() {
   const [loading, setLoading] = useState(true)
   const [show, setShow] = useState(true)
   const [showModal, setShowModal] = useState(false);
+  const [enabled, setEnabled] = useState(false);
+  const [position, setPosition] = useState({ x: 0, y: 0 })
+
+  useEffect(() => {
+
+    const handleMove = (e) => {
+
+      const { pageX, pageY } = e;
+      setPosition({ x: pageX, y: pageY })
+    }
+
+    if (enabled) {
+      addEventListener("mousemove", handleMove)
+    }
+
+    return () => {
+      removeEventListener("mousemove", handleMove)
+    }
+  }, [enabled])
+
+  useEffect(() => {
+    document.body.classList.toggle('no-cursor', enabled)
+
+    return () => {
+      document.body.classList.remove('no-cursor')
+    }
+  }, [enabled])
+
 
   const handleShowModal = () => {
     setShowModal(true);
@@ -47,6 +75,24 @@ function App() {
         </div>
       ) : (
         <div className='visible'>
+          <div className="cursor"
+            style={{
+              zIndex: 1000,
+              position: 'absolute',
+              backgroundColor: 'rgba(0, 0, 0, 0.5)',
+              border: '1px solid #fff',
+              borderRadius: '50%',
+              opacity: 0.8,
+              pointerEvents: 'none',
+              left: -25,
+              top: -25,
+              width: 50,
+              height: 50,
+              transform: `translate(${position.x}px, ${position.y}px)`,
+              display: enabled ? 'block' : 'none',
+              transition: "all ease 0.1s"
+            }}
+          />
           <nav className='navBar'>
             <HamburgerMenu />
           </nav>
@@ -69,7 +115,9 @@ function App() {
           <div className='barraInfoR'>
             <div className='barraInfo-content'>
               <p className='barraInfo-content-email'>alejolac2003@gmail.com</p>
-              <div className="button-follow buttonFollowMouse">
+              <div onClick={() => {
+                setEnabled(!enabled)
+              }} className={enabled ? ("button-follow buttonFollowMouseEnable") : ("button-follow buttonFollowMouse") }>
                 <i className="fa-solid fa-arrow-pointer"></i>
               </div>
             </div>
