@@ -169,3 +169,7 @@ img {
     cursor: pointer;
     transition: 0.2s ease-in-out;
 }
+
+.linksProject i:hover {
+    color: #64ffda;
+}

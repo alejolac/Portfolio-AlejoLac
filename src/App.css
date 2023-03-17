@@ -30,6 +30,23 @@ body {
   margin: 0;
 }
 
+.cursor {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: 1px solid #fff;
+  border-radius: 50%;
+  opacity: 0.8;
+  pointer-events: none;
+  left: -25px;
+  top: -25px;
+  width: 50px;
+  height: 50px;
+}
+
+body.no-cursor {
+  cursor: none;
+}
+
 /* Header */
 
 .header {
@@ -102,8 +119,8 @@ body {
 }
 
 @media (max-width: 1000px) {
-  .aboutMe {
-    margin-left: 80px !important;
+  .aboutMe-content {
+    margin-top: 140px;
   }
 }
 
@@ -183,11 +200,30 @@ body {
   color: #64ffda;
 }
 
+.barraInfo-content-email {
+  margin: 0!important;
+}
+
+.button-follow {
+  padding: 10px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.buttonFollowMouse i{
+  color: #ccd6f6;
+
+}
+
+.buttonFollowMouseEnable i{
+  color: #64ffda;
+}
 
 /* About Me Main */
 
 .aboutMeMain-title {
   color: #64ffda !important;
+  margin-top: 80px;
 }
 
 .abmtt {
@@ -250,7 +286,7 @@ body {
   filter: grayscale(0) contrast(1);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 950px) {
   .aboutMeMain-content {
     flex-direction: column;
     justify-content: center;
@@ -279,18 +315,20 @@ body {
 
 
 .ProjectsMain {
-  margin-top: 150px;
+  padding: 120px 0;
+  margin: 0 auto;
+  max-width: 1000px;
+
 }
 
 .numberHeading {
   display: flex;
   -webkit-box-align: center;
   align-items: center;
-  position: relative;
+  -webkit-box-align: center;
   margin: 10px 0px 40px;
-  width: 700px;
-  margin: 0 auto;
   white-space: nowrap;
+  margin-left: 60px;
 }
 
 .numberHeading::after {
@@ -298,7 +336,7 @@ body {
   display: block;
   position: relative;
   top: -5px;
-  width: 300px;
+  width: 250px;
   height: 1px;
   margin-left: 20px;
   background-color: #233554;

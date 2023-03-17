@@ -20,6 +20,7 @@ function App() {
     setShowModal(false);
   }
 
+
   // UseEffect para la transición de loader a contenido
   useEffect(() => {
     const timeoutId = setTimeout(() => {
@@ -51,16 +52,16 @@ function App() {
           </nav>
           <div className='barraInfoL'>
             <div className='barraInfo-content'>
-              <a href="https://www.linkedin.com/in/alejo-lacroix-906433252/">
+              <a target="_blank" href="https://www.linkedin.com/in/alejo-lacroix-906433252/">
                 <i className="fa-brands fa-linkedin barraInfo-logos"></i>
               </a>
-              <a href="https://github.com/alejolac">
+              <a target="_blank" href="https://github.com/alejolac">
                 <i className="fa-brands fa-github barraInfo-logos"></i>
               </a>
-              <a href="https://www.instagram.com/alejobuc_/">
+              <a target="_blank" href="https://www.instagram.com/alejobuc_/">
                 <i className="fa-brands fa-instagram barraInfo-logos"></i>
               </a>
-              <a href="https://codepen.io/alejobuc">
+              <a target="_blank" href="https://codepen.io/alejobuc">
                 <i className="fa-brands fa-codepen barraInfo-logos"></i>
               </a>
             </div>
@@ -68,6 +69,9 @@ function App() {
           <div className='barraInfoR'>
             <div className='barraInfo-content'>
               <p className='barraInfo-content-email'>alejolac2003@gmail.com</p>
+              <div className="button-follow buttonFollowMouse">
+                <i className="fa-solid fa-arrow-pointer"></i>
+              </div>
             </div>
           </div>
           <main>
