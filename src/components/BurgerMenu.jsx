@@ -16,7 +16,7 @@ const BurgerMenu = () => {
             <ul className="menu">
                 <li><a href="#aboutMeMain"><span className="navNumbers">01.</span> About</a></li>
                 <li><a href="#Projects"><span className="navNumbers">02.</span> Work</a></li>
-                <li><a href="#"><span className="navNumbers">03.</span> Skills</a></li>
+                <li><a href="#Projects"><span className="navNumbers">03.</span> Skills</a></li>
                 <li><a href="#"><span className="navNumbers">04.</span> Contact</a></li>
                 <li><a href="#"><span className="navResume">Resume</span></a></li>
             </ul>
