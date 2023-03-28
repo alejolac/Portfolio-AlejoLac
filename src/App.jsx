@@ -2,15 +2,14 @@ import { useState, useEffect } from 'react'
 import './App.css'
 import Projects from "./components/ownProjectsView.jsx"
 import AboutMeStart from "./components/AboutMe.jsx"
-import Modal from "./components/Modal.jsx"
 import HamburgerMenu from "./components/BurgerMenu.jsx"
 import AboutMeMain from "./components/AboutMeMain.jsx"
 import ProjectCard from "./assets/Projects.jsx"
+import Skills from "./components/Skills.jsx"
 
 function App() {
-  const [loading, setLoading] = useState(true)
+  const [loading, setLoading] = useState(false)
   const [show, setShow] = useState(true)
-  const [showModal, setShowModal] = useState(false);
   const [enabled, setEnabled] = useState(false);
   const [position, setPosition] = useState({ x: 0, y: 0 })
 
@@ -38,16 +37,6 @@ function App() {
       document.body.classList.remove('no-cursor')
     }
   }, [enabled])
-
-
-  const handleShowModal = () => {
-    setShowModal(true);
-  }
-
-  const handleCloseModal = () => {
-    setShowModal(false);
-  }
-
 
   // UseEffect para la transición de loader a contenido
   useEffect(() => {
@@ -117,7 +106,7 @@ function App() {
               <p className='barraInfo-content-email'>alejolac2003@gmail.com</p>
               <div onClick={() => {
                 setEnabled(!enabled)
-              }} className={enabled ? ("button-follow buttonFollowMouseEnable") : ("button-follow buttonFollowMouse") }>
+              }} className={enabled ? ("button-follow buttonFollowMouseEnable") : ("button-follow buttonFollowMouse")}>
                 <i className="fa-solid fa-arrow-pointer"></i>
               </div>
             </div>
@@ -149,6 +138,9 @@ function App() {
                   )
                 }
               </div>
+              <section id='Skill' className='skills'>
+                <Skills />
+              </section>
             </div>
           </main>
         </div>

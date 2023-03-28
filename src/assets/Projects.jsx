@@ -1,5 +1,6 @@
 import Ecommerce from "../../public/Project1.png"
 import Space from "../../public/Project2.png"
+import Portfolio from "../../public/Project3.png"
 
 const Projects = [
     {
@@ -19,6 +20,15 @@ const Projects = [
         description: `This is another project of "Jovenes a programar" where with some colleagues we had to fetch data to a NASA api to show data based on a search`,
         technologies: ["JSON", "JS", "FETCH async/await", "Bootstrap"],
         img: Space
+    },
+
+    {
+        link: "https://alejolac.github.io/Portfolio-AlejoLac/",
+        linkGitHub: "https://github.com/alejolac/Portfolio-AlejoLac",
+        name: "Portfolio",
+        description: "This is the portfolio where all my information is as skills, contact and about me",
+        technologies: ["React", "JSX", "CSS", "JSON", "Vite"],
+        img: Portfolio
     }
 ]
 

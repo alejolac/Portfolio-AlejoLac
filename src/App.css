@@ -30,6 +30,10 @@ body {
   margin: 0;
 }
 
+.mt {
+  margin-top: 40px;
+}
+
 .cursor {
   position: absolute;
   background-color: rgba(0, 0, 0, 0.5);
@@ -44,7 +48,7 @@ body {
 }
 
 body.no-cursor {
-  cursor: none;
+  cursor: none!important;
 }
 
 /* Header */
@@ -354,4 +358,140 @@ body.no-cursor {
   content: "0" counter(section) ".";
   margin-right: 10px;
   color: #64ffda;
+}
+
+.numberHeading2 {
+  counter-increment: section 1!important;
+  content: "0" counter(section) ".";
+}
+
+
+/** SKILLS **/
+
+.skills {
+  padding: 120px 0;
+}
+
+.skills-content {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  max-width: 1400px;
+  text-align: center;
+}
+
+@media (max-width: 700px) {
+  .skills-content-item {
+    flex: 0 0 auto;
+    width: 99.99%!important;
+  }
+}
+
+.skills-content-item {
+  flex: 0 0 auto;
+  width: 40.99%;
+}
+
+.skills-content-item img {
+  max-width: 200px;
+  height: auto;
+  filter: grayscale(100%) contrast(1);
+  transition: 0.2s ease-in-out;
+}
+
+.skills-content-item img:hover {
+  filter: grayscale(0) contrast(1);
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+/* MODAL */
+
+.modal-header {
+  display: flex;
+  flex-shrink: 0;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1rem;
+  gap: 50px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #ccd6f6;
+}
+
+.modal-title{
+  font-size: 22px;
+  color: #ccd6f6!important;
+}
+
+.modal-content-element-skill i {
+  font-size: 100px;
+  transition: 0.3s ease-in-out;
+}
+
+.modal-content-element-skill p {
+  transition: 0.3s ease-in-out;
+}
+
+.modal-content-skill {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+@media (min-width: 700px) {
+  .modal-content-skill {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .modal-content-element-skill {
+    flex: 0 0 auto;
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .modal-content-element-skill p {
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  .modal-content-element-skill i:hover {
+    color: #64ffda;
+  }
+
+  .modal-content-element-skill i:hover + p {
+    color: #64ffda;
+  }
+}
+
+.btn-close {
+  padding: 10px;
+  transition: .3s ease-in-out;
+}
+
+.btn-close:hover {
+  color: #64ffda;
+  cursor: pointer;
+  transform: scale(1.4);
+}
+
+.modal-closing {
+  animation: fadeOut 0.5s ease;
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }
