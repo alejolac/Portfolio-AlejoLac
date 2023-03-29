@@ -22,7 +22,9 @@ const skills = {
         { title: "Git", icon: <i className="fa-brands fa-git-alt"></i> },
         { title: "GitHub", icon: <i className="fa-brands fa-github"></i> },
         { title: "SQL", icon: <i className="fa-solid fa-database"></i> },
-        { title: "Python", icon: <i className="fa-brands fa-python"></i>}
+        { title: "Python", icon: <i className="fa-brands fa-python"></i>},
+        { title: "C#", icon: <i class="fa-solid fa-c"></i>},
+        { title: "Java" , icon: <i className="fa-brands fa-java"></i>}
     ]
 }
 
