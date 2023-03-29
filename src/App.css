@@ -378,6 +378,8 @@ body.no-cursor {
 
 .skills {
   padding: 120px 0;
+  margin: 0 auto;
+  max-width: 1000px;
 }
 
 .skills-content {
@@ -509,6 +511,8 @@ body.no-cursor {
 
 .contact {
   padding: 120px 0;
+  margin: 0 auto;
+  max-width: 1000px;
 }
 
 .contact-content {
@@ -553,3 +557,37 @@ body.no-cursor {
   font-size: 25px;
 }
 
+/* Footer */
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 100px 0 20px 0;
+}
+
+@media (min-width: 700px) {
+  .footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 60px;
+  }
+}
+
+.footer p {
+  font-size: 18px;
+  color: #ccd6f6;
+}
+
+.footer a {
+  text-decoration: none;
+  transition: 0.3s ease-in-out;
+}
+
+.brittany {
+  color: #64ffda;
+  text-decoration: underline;
+}
