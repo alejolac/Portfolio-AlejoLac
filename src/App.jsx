@@ -7,6 +7,7 @@ import AboutMeMain from "./components/AboutMeMain.jsx"
 import ProjectCard from "./assets/Projects.jsx"
 import Skills from "./components/Skills.jsx"
 import Contact from "./components/Contact.jsx"
+import Footer from './components/Footer'
 
 function App() {
   const [loading, setLoading] = useState(true)
@@ -147,18 +148,7 @@ function App() {
               <Contact />
             </section>
             <footer>
-              <div className='footer'>
-                <div>
-                  <a href="https://github.com/alejolac/Portfolio-AlejoLac">
-                    <p>Built by Alejo Lacroix © 2023</p>
-                  </a>
-                </div>
-                <div>
-                  <a href="https://brittanychiang.com">
-                    <p>Original design of <span className='brittany'>Brittany Chiang</span></p>
-                  </a>
-                </div>
-              </div>
+              <Footer />
             </footer>
           </main>
         </div>
