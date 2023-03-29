@@ -185,6 +185,7 @@ body.no-cursor {
   content: "";
   display: block;
   width: 1px;
+  margin-top: 20px!important;
   height: 90px;
   margin: 0px auto;
   background-color: #a8b2d1;
@@ -193,11 +194,13 @@ body.no-cursor {
 .barraInfo-logos {
   color: #ccd6f6;
   font-size: 22px;
-  margin-top: 12px;
+  margin-top: 22px;
+  transition: 0.2s ease-in-out;
 }
 
 .barraInfo-logos:hover {
   color: #64ffda;
+  transform: translateY(-4px);
 }
 
 .barraInfo-content-email:hover {
@@ -365,6 +368,11 @@ body.no-cursor {
   content: "0" counter(section) ".";
 }
 
+.numberHeading3 {
+  counter-increment: section 2!important;
+  content: "0" counter(section) ".";
+}
+
 
 /** SKILLS **/
 
@@ -495,3 +503,53 @@ body.no-cursor {
     opacity: 0;
   }
 }
+
+
+/* Contact */
+
+.contact {
+  padding: 120px 0;
+}
+
+.contact-content {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  max-width: 1400px;
+  text-align: center;
+  gap: 20px;
+}
+
+.titleContact {
+  width: 100%;
+  font-size: 38px;
+}
+
+.contact-text {
+  flex: 0 0 auto;
+  width: 60.99%;
+  font-size: 18px;
+}
+
+.contact-linkedin-github {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  gap: 100px;
+  font-size: 80px;
+}
+
+.contact-linkedin-github a {
+  color: #ccd6f6;
+  transition: 0.3s ease-in-out;
+}
+
+.contact-linkedin-github a:hover {
+  color: #64ffda;
+}
+
+.contact-gmail p{
+  font-size: 25px;
+}
+

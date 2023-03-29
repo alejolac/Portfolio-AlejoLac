@@ -6,6 +6,7 @@ import HamburgerMenu from "./components/BurgerMenu.jsx"
 import AboutMeMain from "./components/AboutMeMain.jsx"
 import ProjectCard from "./assets/Projects.jsx"
 import Skills from "./components/Skills.jsx"
+import Contact from "./components/Contact.jsx"
 
 function App() {
   const [loading, setLoading] = useState(true)
@@ -140,6 +141,9 @@ function App() {
               </div>
               <section id='Skill' className='skills'>
                 <Skills />
+              </section>
+              <section>
+                <Contact />
               </section>
             </div>
           </main>
