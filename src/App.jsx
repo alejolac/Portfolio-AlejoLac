@@ -8,7 +8,7 @@ import ProjectCard from "./assets/Projects.jsx"
 import Skills from "./components/Skills.jsx"
 
 function App() {
-  const [loading, setLoading] = useState(false)
+  const [loading, setLoading] = useState(true)
   const [show, setShow] = useState(true)
   const [enabled, setEnabled] = useState(false);
   const [position, setPosition] = useState({ x: 0, y: 0 })
