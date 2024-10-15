@@ -108,6 +108,9 @@ img {
     .project-img {
         height: 100%;
     }
+    .project {
+        max-height: 400px;
+    }
 }
 @media (max-width: 600px) {
     .project-img {

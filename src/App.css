@@ -222,11 +222,28 @@ body.no-cursor {
 
 }
 
+.buttonFollowMouse i:hover{
+  color: #64ffda;
+
+}
+
 .buttonFollowMouseEnable i{
   color: #64ffda;
 }
 
+.buttonFollowMouseEnable i:hover{
+  color: #ccd6f6;
+}
+
 /* About Me Main */
+
+.aboutMeMainDiv {
+  padding-top: 70px;
+}
+
+.aboutMe {
+  padding-top: 70px;
+}
 
 .aboutMeMain-title {
   color: #64ffda !important;
@@ -267,7 +284,7 @@ body.no-cursor {
   margin-bottom: 1rem;
   font-size: 1.1rem;
   line-height: 1.5;
-  color: #8892b0;
+  color: #aeb8d6;
 }
 
 .aboutMeMain-text p a {
@@ -320,7 +337,6 @@ body.no-cursor {
 
 /* Projects */ 
 
-
 .ProjectsMain {
   padding: 120px 0;
   margin: 0 auto;
@@ -354,6 +370,13 @@ body.no-cursor {
     width: 200px;
   }
 }
+
+@media (max-width: 700px) {
+  .numberHeading::after {
+    width: 100px;
+  }
+}
+
 .numberHeading::before {
   position: relative;
   bottom: 4px;

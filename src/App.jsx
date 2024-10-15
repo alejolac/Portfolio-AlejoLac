@@ -44,7 +44,7 @@ function App() {
   useEffect(() => {
     const timeoutId = setTimeout(() => {
       setShow(false);
-    }, 3000);
+    }, 1500);
 
     return () => clearTimeout(timeoutId);
   }, []);
@@ -53,7 +53,7 @@ function App() {
   useEffect(() => {
     const timeoutId = setTimeout(() => {
       setLoading(false);
-    }, 4500);
+    }, 3000);
 
     return () => clearTimeout(timeoutId);
   }, []);
@@ -70,7 +70,7 @@ function App() {
             style={{
               zIndex: 1000,
               position: 'absolute',
-              backgroundColor: 'rgba(0, 0, 0, 0.5)',
+              backgroundColor: 'rgba(0, 0, 0, 0.6)',
               border: '1px solid #fff',
               borderRadius: '50%',
               opacity: 0.8,
@@ -117,7 +117,7 @@ function App() {
             <div id='aboutMeStart' className='aboutMe'>
               <AboutMeStart />
             </div>
-            <div id="aboutMeMain">
+            <div id="aboutMeMain" className='aboutMeMainDiv'>
               <AboutMeMain />
             </div>
             <div id='Projects' className='ProjectsMain'>
@@ -134,6 +134,7 @@ function App() {
                         linkGitHub={project.linkGitHub}
                         technologies={project.technologies}
                         name={project.name}
+                        state={project.state}
                       />
                     )
                   }
@@ -144,7 +145,7 @@ function App() {
             <section id='Skill' className='skills'>
               <Skills />
             </section>
-            <section>
+            <section id='Contact'>
               <Contact />
             </section>
             <footer>

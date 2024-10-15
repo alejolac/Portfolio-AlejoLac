@@ -15,7 +15,8 @@ const skills = {
         { title: "NodeJS", icon: <i className="fa-brands fa-node-js"></i> },
         { title: "Npm", icon: <i className="fa-brands fa-npm"></i> },
         { title: "Express", icon: <i className="fa-solid fa-server"></i> },
-        { title: "Postman", icon: <i className="fa-solid fa-signs-post"></i> }
+        { title: "Postman", icon: <i className="fa-solid fa-signs-post"></i> },
+        { title: "MongoDB (Mongoose)", icon: <i class="fa-solid fa-leaf"></i> },
     ],
 
     3: [

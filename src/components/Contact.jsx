@@ -19,12 +19,12 @@ function Contact() {
                     </div>
                     <div className='contact-linkedin-github'>
                         <div className='contact-linkedin'>
-                            <a href="">
+                            <a href="https://www.linkedin.com/in/alejo-lacroix-906433252/">
                                 <i className='fa-brands fa-linkedin'></i>
                             </a>
                         </div>
                         <div className='contact-github'>
-                            <a href="">
+                            <a href="https://github.com/alejolac">
                                 <i className='fa-brands fa-github'></i>
                             </a>
                         </div>

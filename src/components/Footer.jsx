@@ -3,8 +3,8 @@ export default function Footer() {
         <>
             <div className='footer'>
                 <div>
-                    <a href="https://github.com/alejolac/Portfolio-AlejoLac">
-                        <p>Built by Alejo Lacroix © 2023</p>
+                    <a href="https://github.com/alejolac">
+                        <p>Built by Alejo Lacroix</p>
                     </a>
                 </div>
                 <div>
