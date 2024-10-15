@@ -105,7 +105,7 @@ function App() {
           </div>
           <div className='barraInfoR'>
             <div className='barraInfo-content'>
-              <p className='barraInfo-content-email'>alejolac2003@gmail.com</p>
+              <p className='barraInfo-content-email'>alejolacdev@gmail.com</p>
               <div onClick={() => {
                 setEnabled(!enabled)
               }} className={enabled ? ("button-follow buttonFollowMouseEnable") : ("button-follow buttonFollowMouse")}>

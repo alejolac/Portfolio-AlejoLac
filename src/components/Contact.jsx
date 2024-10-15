@@ -30,7 +30,7 @@ function Contact() {
                         </div>
                     </div>
                     <div className='contact-gmail'>
-                        <p> alejolac2003@gmail.com</p>
+                        <p> alejolacdev@gmail.com</p>
                     </div>
                 </div>
             </div>

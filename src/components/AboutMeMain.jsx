@@ -14,10 +14,10 @@ export default function AboutMeMain() {
             <div className='aboutMeMain-content'>
                 <div className='aboutMeMain-text'>
                     <p>
-                        Hi! my name is Alejo i'm 19 years old and I developed my passion for programming when I got interested in game development and realized that my favorite part was programming. I took my first steps at the <a target="_blank" href="https://esi.edu.uy">"Escuela Superior de informatica"</a> in 2019, where I would learn Java, C#, SQL among others
+                        Hi! My name is Alejo, and I am 20 years old. I developed my passion for programming when I became interested in game development and realized that my favorite part was programming. Currently, I am studying at the Faculty of Engineering and began my training at the <a href="https://esi.edu.uy" target="_blank" rel="noopener noreferrer">ESI</a> in 2019, where I learned Java, C#, SQL, among other subjects.
                     </p>
                     <p>
-                        I'm currently studying at <a target="_blank" href="https://jovenesaprogramar.edu.uy">Jovenes a programar</a> a course of <a target="_blank" href="https://ceibal.edu.uy">Ceibal</a> where did i learn all the knowledge of a front end and deepen soft skills, and they are helping me get my first job as a developer.
+                        I am currently working at <a href="https://www.anep.edu.uy/" target="_blank" rel="noopener noreferrer">ANEP</a> as an IT intern, where I have gained experience in operating systems and networks. I have also completed my studies at UTU and have knowledge of Node.js, MongoDB, and React. I am excited to continue growing in the field of development and am looking for new opportunities.
                     </p>
                 </div>
                 <div className='aboutMeMain-img'>
